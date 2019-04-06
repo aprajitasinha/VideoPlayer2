@@ -25,7 +25,7 @@ public class ActivityVideoPlayer extends AppCompatActivity implements SurfaceHol
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_video_player);
 
 
         Button buttonPlayVideo = ( Button ) findViewById( R.id.playvideoplayer );
