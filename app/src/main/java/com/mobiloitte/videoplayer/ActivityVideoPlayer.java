@@ -14,7 +14,7 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 
-public class MainActivity extends AppCompatActivity implements SurfaceHolder.Callback{
+public class ActivityVideoPlayer extends AppCompatActivity implements SurfaceHolder.Callback{
     MediaPlayer mediaPlayer;
     SurfaceView surfaceView;
     SurfaceHolder surfaceHolder;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
 
 
         if (mediaC == null) {
-            mediaC = new MediaController(MainActivity.this);
+            mediaC = new MediaController(ActivityVideoPlayer.this);
             mediaC.setAnchorView(mVideoView);
             mVideoView.setMediaController(mediaC);
         }
